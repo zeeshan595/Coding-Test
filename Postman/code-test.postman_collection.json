@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "c32ac7c1-26a8-4a3e-9692-b4bc390faeed",
+		"name": "code-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get 1 Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"queryResult\": {\n        \"queryText\": \"End-user expression\",\n        \"parameters\": {\n            \"action\": \"identity-check\",\n            \"customer-id\": 4\n        },\n        \"outputContexts\": [\n            {\n                \"name\": \"identity-check-intent\",\n                \"lifespanCount\": 5,\n                \"parameters\": {\n                    \"username\": \"zeeshan\"\n                }\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
