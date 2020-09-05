@@ -1,0 +1,46 @@
+{
+  "name": "coding-test-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "webpack-dev-server --mode development --config webpack.config.js",
+    "build": "webpack --mode development --config webpack.config.js",
+    "build:prod": "webpack --mode production --config webpack.config.prod.js",
+    "clean": "rm -rf dist"
+  },
+  "author": "Zeeshan Abid",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^14.6.4",
+    "@types/node-fetch": "^2.5.7",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^5.1.5",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.1.0",
+    "fstream": "^1.0.12",
+    "html-webpack-plugin": "^4.4.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "typescript": "^4.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
